@@ -11,7 +11,7 @@ class Lazykamal < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shuvro/lazykamal/releases/download/v0.1.0/lazykamal_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6ae255e1c9d42b437ad6c302124beda0892a8a1729cab94646e9492492c9a719"
+      sha256 "420b63e886b7954e283bfe1d5ae67310e75167cc33b3a04337b29d6dc5e045af"
 
       def install
         bin.install "lazykamal"
@@ -19,7 +19,7 @@ class Lazykamal < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shuvro/lazykamal/releases/download/v0.1.0/lazykamal_0.1.0_darwin_arm64.tar.gz"
-      sha256 "34c2547a98cac2d62ca48bb7f7d3a354b49cf36b58f1c8efbe9ee37bad22b360"
+      sha256 "5702821efd0bc4c3320cd28dce0078b9158e43f13ab97b5be0e6e949e2fd30e3"
 
       def install
         bin.install "lazykamal"
@@ -30,14 +30,14 @@ class Lazykamal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shuvro/lazykamal/releases/download/v0.1.0/lazykamal_0.1.0_linux_amd64.tar.gz"
-      sha256 "907fb68762d115552903ee1d667f4f5660cfcb7264bd7179d90861ee7c7e5646"
+      sha256 "7c1cbe9fd97d1236c5d9f07b717eaebf72df5428f16b0ff87e2620620fd5a50f"
       def install
         bin.install "lazykamal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shuvro/lazykamal/releases/download/v0.1.0/lazykamal_0.1.0_linux_arm64.tar.gz"
-      sha256 "a8b25dacd626a60ad050ec0c822f76bc780f3b70ede3a8f890080eecbbf7d1e7"
+      sha256 "5368b43c765a9168751b8cad57dcf85106af482dacf9c688f238229392dfd234"
       def install
         bin.install "lazykamal"
       end
