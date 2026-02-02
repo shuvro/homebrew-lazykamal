@@ -5,21 +5,21 @@
 class Lazykamal < Formula
   desc "Lazydocker-style TUI for Kamal-deployed apps"
   homepage "https://github.com/shuvro/lazykamal"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.1/lazykamal_1.0.1_darwin_amd64.tar.gz"
-      sha256 "b82d0b3d536e1eef6d55e5c75a3bb17fe314a5db3c4588c6e663ec9b90f880c1"
+      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.2/lazykamal_1.0.2_darwin_amd64.tar.gz"
+      sha256 "bb9bfa4d46e424fb8acc6498bb2ad4fd10f7c0e171e084074379f04c63ee2f65"
 
       def install
         bin.install "lazykamal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.1/lazykamal_1.0.1_darwin_arm64.tar.gz"
-      sha256 "e9cf92cd426ac37f33dc4c5ed707770595c56f184161ec1e2e9e113d028d2767"
+      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.2/lazykamal_1.0.2_darwin_arm64.tar.gz"
+      sha256 "2dbab3c8a5cc1dac6345ec453f7eb254d9a6b3926c30d64fe676a57970a12bcb"
 
       def install
         bin.install "lazykamal"
@@ -29,15 +29,15 @@ class Lazykamal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.1/lazykamal_1.0.1_linux_amd64.tar.gz"
-      sha256 "0aadeb5c8a5c2d0d021aa760af6528151f19d6d83e7b6c95b5428d2941704fa2"
+      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.2/lazykamal_1.0.2_linux_amd64.tar.gz"
+      sha256 "814dd1d688d1c00dcf8ddf1b4a67da6fa803e43c3bb6f28aa569e573e6d474aa"
       def install
         bin.install "lazykamal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.1/lazykamal_1.0.1_linux_arm64.tar.gz"
-      sha256 "65d4f6e92f3431bbd3f2ff0289a34b34b749c3eebb0e355d824b851c41cd3bf2"
+      url "https://github.com/shuvro/lazykamal/releases/download/v1.0.2/lazykamal_1.0.2_linux_arm64.tar.gz"
+      sha256 "ac2ec1502d8c074c1907a388339034229df24186718762f5160277a429da35b5"
       def install
         bin.install "lazykamal"
       end
